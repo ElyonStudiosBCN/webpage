@@ -57,14 +57,3 @@
 - [ ] Configurar URLs amigables y redirecciones si es necesario  
 - [ ] Planificar mantenimiento y futuras mejoras  
 
----
-
-## 📋 Cómo usar este roadmap en Notion
-
-1. Crea una página nueva en Notion  
-2. Pega este contenido directamente  
-3. Usa checkboxes para marcar tareas completadas  
-4. Puedes transformar cada etapa en un toggle para mayor orden  
-5. Agrega fechas, responsables o comentarios según avances  
-
----
