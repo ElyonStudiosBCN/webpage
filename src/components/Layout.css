@@ -1,0 +1,13 @@
+/* src/components/Layout.css */
+
+header {
+  background-color: var(--color-bg);
+  padding-bottom: 0.5rem;
+}
+
+.main-content {
+  padding: 2rem;
+  background-color: var(--color-bg);
+  min-height: calc(100vh - 80px); /* Ajusta según altura del header */
+  color: var(--color-text);
+}
