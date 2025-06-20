@@ -1,3 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Servicios() {
-  return <h1>Servicios</h1>;
+  const { t } = useTranslation();
+
+  return <h1>{t("services.welcome")}</h1>;
 }

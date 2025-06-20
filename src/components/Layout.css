@@ -1,13 +1,31 @@
-/* src/components/Layout.css */
-
-header {
-  background-color: var(--color-bg);
-  padding-bottom: 0.5rem;
+/* HEADER */
+.layout-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: var(--color-navbar-bg);
+  padding: 1rem 1.5rem;
+  gap: 1rem;
+  width: 100%;
+  box-sizing: border-box; /* recomendable para manejo de padding y ancho */
+  z-index: 1000; /* para asegurar que el navbar esté sobre otros elementos */
 }
 
+/* Ajuste para pantallas más grandes */
+@media (min-width: 768px) {
+  .layout-header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* MAIN CONTENT */
 .main-content {
-  padding: 2rem;
+  padding: 2rem 1.5rem;
   background-color: var(--color-bg);
-  min-height: calc(100vh - 80px); /* Ajusta según altura del header */
+  min-height: calc(100vh - 18em); /* Ajustado para considerar header + footer */
   color: var(--color-text);
+  width: 100%;
+  box-sizing: border-box;
 }

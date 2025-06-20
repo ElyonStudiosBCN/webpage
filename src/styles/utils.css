@@ -1,0 +1,112 @@
+/* Layout & Containers */
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.section {
+  padding: 2rem 1rem;
+}
+
+.section-light {
+  background-color: var(--color-bg-soft);
+}
+
+.card {
+  background-color: var(--color-surface);
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px var(--color-shadow);
+  border: 1px solid var(--color-border);
+}
+
+/* Tipografia */
+
+.text-muted {
+  color: var(--color-muted);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Botones */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--button-text);
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-hover);
+}
+
+.btn-accent {
+  background-color: var(--color-accent);
+  color: var(--button-text);
+}
+
+.btn-accent:hover {
+  background-color: var(--color-accent-hover);
+}
+
+/* Links */
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+/* Misc */
+.rounded {
+  border-radius: 1rem;
+}
+
+.shadow {
+  box-shadow: 0 4px 12px var(--color-shadow);
+}
+
+.border {
+  border: 1px solid var(--color-border);
+}
+
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+
+/* Responsive para .container (opcional) */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+

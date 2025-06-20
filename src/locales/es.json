@@ -1,0 +1,38 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "portfolio": "Portfolio",
+    "about": "Sobre mí",
+    "media": "Media",
+    "contact": "Contacto"
+  },
+  "footer": {
+    "tagline": "Producción musical, composición y coaching.",
+    "navigation": "Navegación",
+    "followUs": "Síguenos",
+    "rights": "Todos los derechos reservados."
+  },
+  "aria": {
+    "theme": "Cambiar tema",
+    "language": "Cambiar idioma"
+  },
+  "home": {
+    "welcome": "Inicio"
+  },
+  "services": {
+    "welcome": "Servicios"
+  },
+  "portfolio": {
+    "welcome": "Portfolio"
+  },
+  "about": {
+    "welcome": "Sobre mí"
+  },
+  "media": {
+    "welcome": "Media"
+  },
+  "contact": {
+    "welcome": "Contacto"
+  }
+}

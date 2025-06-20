@@ -1,36 +1,52 @@
+/* Navbar.jsx */
 import { Link, useLocation } from "react-router-dom";
-import "./Navbar.css"; // opcional si deseas estilos aparte
+import { useTranslation } from "react-i18next";
+import useTheme from "../hooks/useTheme";
+import "./Navbar.css";
+import logo from "../assets/logo-nobg-onlytext.png";
 
 export default function Navbar() {
   const location = useLocation();
-
   const isActive = (path) => location.pathname === path;
 
+  const { toggleTheme } = useTheme();
+  const { i18n, t } = useTranslation();
+
+  const toggleLanguage = () => {
+    i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
+  };
+
   return (
-    <nav className="navbar">
+    <nav className="section container navbar">
       <div className="logo">
-        <Link to="/">🎵 Elyon Studios</Link>
+        <img src={logo} alt="Elyon Studios Logo" className="logo-image" />
       </div>
-      <ul className="nav-links">
-        <li className={isActive("/") ? "active" : ""}>
-          <Link to="/">Inicio</Link>
-        </li>
-        <li className={isActive("/servicios") ? "active" : ""}>
-          <Link to="/servicios">Servicios</Link>
-        </li>
-        <li className={isActive("/portfolio") ? "active" : ""}>
-          <Link to="/portfolio">Portfolio</Link>
-        </li>
-        <li className={isActive("/sobremi") ? "active" : ""}>
-          <Link to="/sobremi">Sobre mí</Link>
-        </li>
-        <li className={isActive("/media") ? "active" : ""}>
-          <Link to="/media">Media</Link>
-        </li>
-        <li className={isActive("/contacto") ? "active" : ""}>
-          <Link to="/contacto">Contacto</Link>
-        </li>
-      </ul>
+      <div className="rightside">
+        <ul className="nav-links">
+          <li className={isActive("/") ? "active" : ""}>
+            <Link to="/">{t("nav.home")}</Link>
+          </li>
+          <li className={isActive("/servicios") ? "active" : ""}>
+            <Link to="/servicios">{t("nav.services")}</Link>
+          </li>
+          <li className={isActive("/portfolio") ? "active" : ""}>
+            <Link to="/portfolio">{t("nav.portfolio")}</Link>
+          </li>
+          <li className={isActive("/sobremi") ? "active" : ""}>
+            <Link to="/sobremi">{t("nav.about")}</Link>
+          </li>
+          <li className={isActive("/media") ? "active" : ""}>
+            <Link to="/media">{t("nav.media")}</Link>
+          </li>
+          <li className={isActive("/contacto") ? "active" : ""}>
+            <Link to="/contacto">{t("nav.contact")}</Link>
+          </li>
+        </ul>
+        <div className="layout-actions">
+          <button onClick={toggleTheme} aria-label={t("aria.theme")}>🌓</button>
+          <button onClick={toggleLanguage} aria-label={t("aria.language")}>🌐</button>
+        </div>
+      </div>
     </nav>
   );
 }

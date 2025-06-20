@@ -1,3 +1,6 @@
+import { useTranslation } from "react-i18next";
+
 export default function Contacto() {
-  return <h1>Contacto</h1>;
+  const { t } = useTranslation();
+  return <h1>{t("contact.welcome")}</h1>;
 }

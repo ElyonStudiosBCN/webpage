@@ -1,3 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Home() {
-  return <h1>Bienvenido a Elyon Studios</h1>;
+  const { t } = useTranslation();
+
+  return <h1>{t("home.welcome")}</h1>;
 }

@@ -1,3 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function SobreMi() {
-  return <h1>Sobre mi</h1>;
+  const { t } = useTranslation();
+  
+    return <h1>{t("about.welcome")}</h1>;
 }

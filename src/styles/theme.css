@@ -1,0 +1,67 @@
+/* Light Mode */
+:root {
+  --color-bg: #ffffff;
+  --color-bg-soft: #f9f9f9;
+  --color-surface: #f2f2f2;
+  --color-text: #111111;
+  --color-muted: #555555;
+
+  --color-primary: #b1955d;         /* Soft gold */
+  --color-primary-hover: #8f743e;
+  --color-primary-light: #aa9d84;
+
+  --color-accent: #5c6bc0;          /* Optional secondary (cool contrast) */
+  --color-accent-hover: #3f51b5;
+
+  --color-success: #4caf50;
+  --color-warning: #ff9800;
+  --color-error: #f44336;
+
+  --color-border: #8f8f8f;
+  --color-shadow: rgba(0, 0, 0, 0.06);
+
+  --color-link: #ad935d;
+  --color-link-hover: #947842;
+  --color-link-active: #4d3f23;
+
+  --button-bg: var(--color-primary);
+  --button-text: #ffffff;
+  --button-hover: var(--color-primary-hover);
+
+  --color-footer-bg: #f3f1ed;
+  --color-navbar-bg: #ffffff;
+}
+
+/* Dark Mode */
+[data-theme="dark"] {
+  --color-bg: #121212;
+  --color-bg-soft: #1b1b1b;
+  --color-surface: #222222;
+  --color-text: #f5f5f5;
+  --color-muted: #aaaaaa;
+
+  --color-primary: #d2b878;
+  --color-primary-hover: #c4a863;
+  --color-primary-light: #f1eacc;
+
+  --color-accent: #8c9eff;
+  --color-accent-hover: #536dfe;
+
+  --color-success: #81c784;
+  --color-warning: #ffb74d;
+  --color-error: #e57373;
+
+  --color-border: #2a2a2a;
+  --color-shadow: rgba(0, 0, 0, 0.35);
+
+  --color-link: #d2b878;
+  --color-link-hover: #7e6c3f;
+  --color-link-active: #fff0d3;
+
+  --button-bg: var(--color-primary);
+  --button-text: #000000;
+  --button-hover: var(--color-primary-hover);
+
+  --color-footer-bg: #181818;
+  --color-navbar-bg: #121212;
+}

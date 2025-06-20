@@ -1,3 +1,7 @@
+import { useTranslation } from "react-i18next";
+
 export default function Media() {
-  return <h1>Media</h1>;
+  const { t } = useTranslation();
+
+  return <h1>{t("media.welcome")}</h1>;
 }

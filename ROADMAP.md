@@ -14,11 +14,11 @@
 
 ## 🎨 Etapa 2 – Diseño Base y Sistema Visual
 
-- [ ] Definir paleta de colores con CSS Variables en `theme.css`  
+- [x] Definir paleta de colores con CSS Variables en `theme.css`  
 - [ ] Añadir tipografías profesionales desde Google Fonts  
-- [ ] Crear estilos globales (`index.css`) y contenedores reutilizables  
-- [ ] Implementar componente `Footer` común a todas las páginas  
-- [ ] Integrar la paleta en todos los componentes base (Navbar, Layout, Footer)  
+- [x] Crear estilos globales (`index.css`) y contenedores reutilizables  
+- [x] Implementar componente `Footer` común a todas las páginas  
+- [x] Integrar la paleta en todos los componentes base (Navbar, Layout, Footer)  
 
 ---
 

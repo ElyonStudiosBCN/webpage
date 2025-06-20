@@ -1,4 +1,5 @@
 // src/main.jsx
+import "./i18n";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import AppRouter from "./router"; // Asegúrate de importar esto
