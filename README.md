@@ -74,12 +74,12 @@
 
 ---
 
-### 🌐 Etapa 3 – Desarrollo de Páginas
+### 🌐 Etapa 3 – Desarrollo de Páginas (BASE)
 
 - [ ] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
 - [ ] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
 - [ ] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
-- [ ] **Sobre mí:** Biografía, experiencia, foto, visión artística  
+- [x] **Sobre mí:** Biografía, experiencia, foto, visión artística  
 - [ ] **Media:** Integración de YouTube, Spotify, blog, Instagram  
 - [ ] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
 
@@ -96,7 +96,18 @@
 
 ---
 
-### 🚀 Etapa 5 – Publicación y Mantenimiento
+### 🌐 Etapa 5 – Desarrollo de Páginas (TEXTOS)
+
+- [ ] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
+- [ ] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
+- [ ] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
+- [ ] **Sobre mí:** Biografía, experiencia, foto, visión artística  
+- [ ] **Media:** Integración de YouTube, Spotify, blog, Instagram  
+- [ ] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
+
+---
+
+### 🚀 Etapa 6 – Publicación y Mantenimiento
 
 - [ ] Optimizar imágenes y recursos para velocidad  
 - [ ] Auditoría SEO avanzada:  
