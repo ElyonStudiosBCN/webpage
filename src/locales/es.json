@@ -27,7 +27,13 @@
     "welcome": "Portfolio"
   },
   "about": {
-    "welcome": "Sobre mí"
+    "welcome": "Sobre mí",
+    "description1": {
+      "p1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eleifend eros in massa scelerisque porta. Nulla imperdiet pulvinar luctus. Nulla faucibus mauris leo, ut volutpat arcu dictum a. Cras sodales nisi id elit dignissim, tempus luctus ipsum auctor. Nunc eu maximus turpis. Phasellus id semper diam. Morbi aliquam risus blandit, lobortis justo non, suscipit erat. Duis maximus interdum sollicitudin. Ut vitae scelerisque justo. Donec ultrices rutrum neque, quis aliquet lorem fermentum interdum. Suspendisse potenti. In condimentum semper sem sit amet scelerisque. Donec at hendrerit lorem, sed gravida nisi. In velit arcu, dapibus ac massa ac, convallis auctor nunc.",
+      "p2": "Fusce leo leo, mattis eget auctor et, semper sit amet lacus. Mauris dui dolor, hendrerit mattis magna mattis, varius suscipit est. Ut vel condimentum risus, nec venenatis ligula. Sed ac purus vel tellus consequat convallis ac vel nisl. Curabitur at urna tempor, dictum dolor ut, mattis ante. Phasellus congue ultrices nunc id hendrerit. Aenean congue rhoncus lacus semper gravida. Aenean at metus neque. Nunc ultrices consectetur elit, a consequat sem fringilla at. Quisque tincidunt dolor sed iaculis elementum. Mauris eget lacus in magna laoreet lacinia. Nullam dui leo, vulputate nec arcu sit amet, volutpat placerat nisi. Nulla placerat enim sed sapien ultrices, ac malesuada ipsum cursus.",
+      "p3": "Etiam placerat posuere odio id mattis. Duis eget faucibus justo. Nunc sit amet diam rutrum, elementum tellus id, rutrum dui. Integer pellentesque vel felis vitae rutrum. Nam ut turpis id sem porttitor sollicitudin nec sollicitudin sapien. Aliquam erat volutpat. Morbi in bibendum justo, et tincidunt magna."
+    },
+    "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo vitae elit aliquam tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
   "media": {
     "welcome": "Media"

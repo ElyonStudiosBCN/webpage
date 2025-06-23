@@ -1,0 +1,17 @@
+
+.pau-image {
+    max-width: 25em;
+    border-radius: 1em;
+}
+.aboutme-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+.text2 {
+    margin-top: 2em;
+}
+.text1 {
+    margin-right: 3em;
+    text-align: justify;
+}
