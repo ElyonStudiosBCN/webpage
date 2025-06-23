@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: var(--font-body);
   background-color: var(--color-bg);
   color: var(--color-text);
   line-height: 1.6;
@@ -30,4 +30,8 @@ img {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
 }
