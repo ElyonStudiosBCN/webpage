@@ -1,0 +1,16 @@
+[
+    {
+    "id": "plantilla",
+    "title": "POST PLANTILLA",
+    "date": "2025-06-25",
+    "excerpt": "Este post es una plantilla.",
+    "filename": "plantilla.md"
+  },
+  {
+    "id": "post-001",
+    "title": "Mi primer post",
+    "date": "2025-06-24",
+    "excerpt": "Este es el resumen de mi primer post.",
+    "filename": "post-001.md"
+  }
+]

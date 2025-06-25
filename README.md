@@ -77,11 +77,12 @@
 ### 🌐 Etapa 3 – Desarrollo de Páginas (BASE)
 
 - [ ] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
-- [ ] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
+- [x] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
 - [ ] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
 - [x] **Sobre mí:** Biografía, experiencia, foto, visión artística  
-- [ ] **Media:** Integración de YouTube, Spotify, blog, Instagram  
-- [ ] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
+- [x] **Media:** Integración de YouTube, Spotify, blog, Instagram  
+- [x] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
+- [x] **Blog:** Blog con posts que puedan crearse y añadirse facilmente  
 
 ---
 
@@ -104,6 +105,7 @@
 - [ ] **Sobre mí:** Biografía, experiencia, foto, visión artística  
 - [ ] **Media:** Integración de YouTube, Spotify, blog, Instagram  
 - [ ] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
+- [x] **Blog:** Blog con posts que puedan crearse y añadirse facilmente  
 
 ---
 

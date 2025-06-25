@@ -20,8 +20,24 @@
   "home": {
     "welcome": "Home"
   },
+  "blog": {
+    "welcome": "Blog"
+  },
   "services": {
-    "welcome": "Services"
+    "welcome": "Services",
+    "contactButton": "Contact",
+    "recording": {
+      "title": "Recorsing / Production",
+      "text": "We offer professional recording, mastering and musical production adapted to your needs."
+    },
+    "composition": {
+      "title": "Composition / BSO",
+      "text": "We create original soundtracks for films, videogames, advertisements and more."
+    },
+    "coaching": {
+      "title": "Piano & Vocal Coaching",
+      "text": "Personalized piano and vocal coaching for every level."
+    }
   },
   "portfolio": {
     "welcome": "Portfolio"
@@ -36,9 +52,36 @@
     "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo vitae elit aliquam tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
   "media": {
-    "welcome": "Media"
+    "welcome": "Media",
+    "youtube": "YouTube Channel",
+    "spotify": "Listen on Spotify",
+    "blog": "Blog",
+    "blogDescription": "Discover reflections, creative processes and updates.",
+    "blogButton": "Go to Blog",
+    "instagram": "Instagram",
+    "instagramDescription": "Follow me for exclusive content and behind-the-scenes.",
+    "instagramButton": "View on Instagram"
   },
   "contact": {
-    "welcome": "Contact"
+    "welcome": "Contact Me!",
+    "name": "Name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "service": "Type of service",
+    "message": "Message",
+    "send": "Send",
+    "success": "Message sent successfully!",
+    "error": "There was an error sending the message.",
+    "infoTitle": "Contact Information",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone",
+    "addressLabel": "Address",
+    "options": {
+      "recording": "Recording / Production",
+      "composition": "Composition / Soundtrack",
+      "coaching": "Coaching",
+      "other": "Other"
+    }
   }
 }

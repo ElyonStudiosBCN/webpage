@@ -20,8 +20,24 @@
   "home": {
     "welcome": "Inicio"
   },
+  "blog": {
+    "welcome": "Blog"
+  },
   "services": {
-    "welcome": "Servicios"
+    "welcome": "Servicios",
+    "contactButton": "Contactar",
+    "recording": {
+      "title": "Grabación / Producción",
+      "text": "Ofrecemos grabación profesional, mezcla y producción musical adaptada a tus necesidades."
+    },
+    "composition": {
+      "title": "Composición / BSO",
+      "text": "Creamos música original para películas, anuncios, videojuegos y mucho más."
+    },
+    "coaching": {
+      "title": "Piano & Vocal Coaching",
+      "text": "Clases personalizadas de piano y técnica vocal para todos los niveles."
+    }
   },
   "portfolio": {
     "welcome": "Portfolio"
@@ -36,9 +52,36 @@
     "description2": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec justo vitae elit aliquam tincidunt. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
   },
   "media": {
-    "welcome": "Media"
+    "welcome": "Media",
+    "youtube": "Canal de YouTube",
+    "spotify": "Escúchame en Spotify",
+    "blog": "Blog",
+    "blogDescription": "Descubre reflexiones, procesos creativos y novedades.",
+    "blogButton": "Ir al Blog",
+    "instagram": "Instagram",
+    "instagramDescription": "Sígueme para contenido exclusivo y detrás de escenas.",
+    "instagramButton": "Ver en Instagram"
   },
   "contact": {
-    "welcome": "Contacto"
+    "welcome": "¡Contáctame!",
+    "name": "Nombre",
+    "email": "Correo electrónico",
+    "phone": "Teléfono (opcional)",
+    "service": "Tipo de servicio",
+    "message": "Mensaje",
+    "send": "Enviar",
+    "success": "¡Mensaje enviado correctamente!",
+    "error": "Hubo un error al enviar el mensaje.",
+    "infoTitle": "Información de contacto",
+    "nameLabel": "Nombre",
+    "emailLabel": "Email",
+    "phoneLabel": "Teléfono",
+    "addressLabel": "Dirección",
+    "options": {
+      "recording": "Grabación / Producción",
+      "composition": "Composición / BSO",
+      "coaching": "Coaching",
+      "other": "Otros"
+    }
   }
 }

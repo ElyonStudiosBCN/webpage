@@ -1,0 +1,67 @@
+.service-block {
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 12px var(--color-shadow);
+  transition: box-shadow 0.3s ease;
+}
+
+.service-title {
+  cursor: pointer;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  border-bottom: 1px solid var(--color-border);
+  user-select: none;
+}
+
+.service-content-wrapper {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.3s ease;
+  padding: 0 1rem;
+}
+
+.service-block.open .service-content-wrapper {
+  max-height: 800px; /* enough room for content */
+  padding: 1rem;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.service-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-button {
+  width: 10em;
+}
+
+.service-image {
+  max-width: 100%;
+  border-radius: 0.75rem;
+}
+
+.service-title::after {
+  content: "▸";
+  float: right;
+  transition: transform 0.3s ease;
+}
+
+.service-block.open .service-title::after {
+  transform: rotate(90deg);
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}

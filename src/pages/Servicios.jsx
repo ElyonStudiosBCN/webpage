@@ -1,7 +1,90 @@
+// src/pages/Servicios.jsx
+import "./Servicios.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
+import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
+
+import imgRecording from "../assets/placeholder.png";
+import imgComposition from "../assets/placeholder.png";
+import imgCoaching from "../assets/placeholder.png";
 
 export default function Servicios() {
   const { t } = useTranslation();
+  const [searchParams] = useSearchParams();
+  const selectedService = searchParams.get("service");
 
-  return <h1>{t("services.welcome")}</h1>;
+  const [openId, setOpenId] = useState(selectedService);
+
+  const services = [
+    {
+      id: "recording",
+      title: t("services.recording.title"),
+      text: t("services.recording.text"),
+      image: imgRecording,
+    },
+    {
+      id: "composition",
+      title: t("services.composition.title"),
+      text: t("services.composition.text"),
+      image: imgComposition,
+    },
+    {
+      id: "coaching",
+      title: t("services.coaching.title"),
+      text: t("services.coaching.text"),
+      image: imgCoaching,
+    },
+  ];
+
+  const toggleSection = (id) => {
+    setOpenId((prev) => (prev === id ? null : id));
+  };
+
+  return (
+    <section className="section section-light">
+      <div className="card">
+        <h1 className="heading text-primary mb-4">{t("services.welcome")}</h1>
+
+        {services.map((service) => {
+          const isOpen = openId === service.id;
+          return (
+            <div
+              key={service.id}
+              className={`service-block card mb-4 ${isOpen ? "open" : ""}`}
+            >
+              <div
+                className="service-title"
+                onClick={() => toggleSection(service.id)}
+              >
+                {service.title}
+              </div>
+              <div
+                className={`service-content-wrapper ${
+                  isOpen ? "expanded" : ""
+                }`}
+              >
+                <div className="service-content">
+                  <div className="service-details">
+                    <p className="text-muted">{service.text}</p>
+                    <img
+                      src={service.image}
+                      alt={service.title}
+                      className="service-image"
+                    />
+                  </div>
+                  <Link
+                    to={`/contacto?service=${service.id}`}
+                    className="btn btn-accent mt-2 service-button"
+                  >
+                    {t("services.contactButton")}
+                  </Link>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </section>
+  );
 }

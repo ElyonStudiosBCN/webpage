@@ -107,6 +107,15 @@
     flex-wrap: wrap;
     justify-content: flex-end;
 }
+.logo-mic {
+  margin-right: 1em;
+  height: 50px;
+}
+.logo-and-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* Responsive */
 @media (max-width: 768px) {

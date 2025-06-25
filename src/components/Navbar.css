@@ -51,10 +51,51 @@
   color: var(--color-link-hover);
 }
 
-.nav-links li.active a {
+.nav-links > li.active > a {
   color: var(--color-link-active);
   border-bottom: 2px solid var(--color-link-active);
   padding-bottom: 2px;
+}
+
+/* Dropdown base */
+.nav-links .dropdown {
+  position: relative;
+}
+
+.nav-links .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--color-navbar-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  display: none;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  z-index: 999;
+  min-width: 220px;
+  box-shadow: 0 8px 16px var(--color-shadow);
+  list-style: none;
+}
+
+.nav-links .dropdown:hover .dropdown-menu,
+.nav-links .dropdown:focus-within .dropdown-menu {
+  display: flex;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li a {
+  color: var(--color-link);
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  color: var(--color-link-hover);
 }
 
 .layout-actions {

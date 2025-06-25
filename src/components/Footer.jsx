@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaInstagram, FaYoutube, FaSpotify } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
+import logoMic from '../assets/logo-nobg-onlymic.png'
 import "./Footer.css"; // Puedes eliminar estilos que ya estén cubiertos por utilidades
 
 const Footer = () => {
@@ -14,9 +15,14 @@ const Footer = () => {
       <div className="container">
         <div className="container footer-grid">
           {/* Brand / Tagline */}
-          <div className="footer-item">
-            <h2 className="text-primary">Elyon Studios</h2>
-            <p className="text-muted">{t("footer.tagline")}</p>
+          <div className="logo-and-text">
+            <div className="logo logo-wrapper">
+              <img src={logoMic} alt="Elyon Studios Logo" className="logo-mic" />
+            </div>
+            <div className="footer-item">
+              <h2 className="text-primary">Elyon Studios</h2>
+              <p className="text-muted">{t("footer.tagline")}</p>
+            </div>
           </div>
 
           {/* Navigation */}
