@@ -1,0 +1,37 @@
+.portfolio-subsection h2 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--color-muted);
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.portfolio-item {
+  width: 120px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.portfolio-item img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--color-border);
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-item span {
+  font-size: 0.9rem;
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.portfolio-item:hover {
+  transform: scale(1.05);
+}

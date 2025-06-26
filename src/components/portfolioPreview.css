@@ -1,0 +1,31 @@
+.portfolio-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4.5rem;
+  margin: 2rem;
+}
+
+.portfolio-preview-item {
+    transition: transform 0.2s ease;
+    text-align: center;
+    padding: 0.7rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+.portfolio-preview-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px var(--color-shadow);
+}
+
+.portfolio-preview-item img {
+  width: 6em;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}

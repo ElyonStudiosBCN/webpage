@@ -1,0 +1,33 @@
+.servicios-preview-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10rem;
+  margin: 2rem;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.servicios-preview-item {
+    transition: transform 0.2s ease;
+    text-align: center;
+    padding: 0.7rem;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+}
+
+.servicios-preview-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px var(--color-shadow);
+}
+
+.servicios-preview-item img {
+  width: 6em;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  margin-bottom: 0.5rem;
+}

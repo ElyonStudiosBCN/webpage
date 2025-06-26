@@ -18,7 +18,41 @@
     "language": "Change language"
   },
   "home": {
-    "welcome": "Home"
+    "hero": {
+      "title": "Elyon Studios",
+      "subtitle": "Professional Music Composition and Production",
+      "cta": "Discover our work"
+    },
+    "videoSection": {
+      "title": "The best of our work",
+      "description": "A sample of the projects that define us the most."
+    },
+    "portfolioPreview": {
+      "title": "Featured Projects",
+      "description": "Take a look at a random selection of our latest work.",
+      "cta": "View full portfolio"
+    },
+    "serviciosPreview": {
+      "title": "Our Services",
+      "description": "Take a look at our services",
+      "cta": "View full services"
+    },
+    "latestPost": {
+      "title": "Latest Blog Post",
+      "cta": "Read more"
+    },
+    "contact": {
+      "title": "Got a project in mind?",
+      "description": "Let's talk! I'm here to help you bring your musical vision to life.",
+      "cta": "Contact me"
+    }
+  },
+  "about-prev": {
+    "preview": {
+      "experience": "Over 10 years composing for film, TV and video games.",
+      "focus": "An artistic and technical approach tailored to each project.",
+      "commitment": "Total commitment to emotion and sound storytelling."
+    }
   },
   "blog": {
     "welcome": "Blog"
@@ -40,7 +74,9 @@
     }
   },
   "portfolio": {
-    "welcome": "Portfolio"
+    "welcome": "Portfolio",
+    "section1": "🎼 Composition / BSO",
+    "section2": "🎤 Production / Recording"
   },
   "about": {
     "welcome": "About me",

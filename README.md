@@ -76,9 +76,9 @@
 
 ### 🌐 Etapa 3 – Desarrollo de Páginas (BASE)
 
-- [ ] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
+- [x] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
 - [x] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
-- [ ] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
+- [x] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
 - [x] **Sobre mí:** Biografía, experiencia, foto, visión artística  
 - [x] **Media:** Integración de YouTube, Spotify, blog, Instagram  
 - [x] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
@@ -88,16 +88,14 @@
 
 ### ⚙️ Etapa 4 – Funcionalidades y Optimización
 
-- [ ] Añadir animaciones de entrada con `framer-motion` o CSS  
-- [ ] Implementar formulario funcional (EmailJS, Netlify Forms o backend propio)  
-- [ ] Añadir modo oscuro con CSS variables  
+- [x] Añadir animaciones de entrada con `framer-motion` o CSS   
 - [ ] Adaptación responsive y mobile-first  
 - [ ] Añadir SEO básico con React Helmet (títulos, meta tags dinámicos)  
 - [ ] Mejorar accesibilidad según WCAG 2.1  
 
 ---
 
-### 🌐 Etapa 5 – Desarrollo de Páginas (TEXTOS)
+### 🌐 Etapa 5 – Desarrollo de Páginas (CONTENIDO)
 
 - [ ] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
 - [ ] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
@@ -105,7 +103,7 @@
 - [ ] **Sobre mí:** Biografía, experiencia, foto, visión artística  
 - [ ] **Media:** Integración de YouTube, Spotify, blog, Instagram  
 - [ ] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
-- [x] **Blog:** Blog con posts que puedan crearse y añadirse facilmente  
+- [ ] **Blog:** Blog con posts que puedan crearse y añadirse facilmente  
 
 ---
 
@@ -120,11 +118,10 @@
 - [ ] Pruebas cross-browser y responsive  
 - [ ] Publicar en GitHub Pages, Vercel o Netlify  
 - [ ] Configurar URLs amigables y redirecciones si es necesario  
-- [ ] Planificar mantenimiento y futuras mejoras  
 
 ---
 
-💡 Proyecto en desarrollo por **Elyon Studios BCN**
+💡 Proyecto en desarrollo por **Elyon Studios BCN** y **Iratxe Moya**
 
 
 ## 🎨 Guia práctica para variables de colores

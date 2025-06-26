@@ -18,7 +18,41 @@
     "language": "Cambiar idioma"
   },
   "home": {
-    "welcome": "Inicio"
+    "hero": {
+      "title": "Elyon Studios",
+      "subtitle": "Composición y Producción Musical Profesional",
+      "cta": "Descubre nuestro trabajo"
+    },
+    "videoSection": {
+      "title": "Lo mejor de nuestro trabajo",
+      "description": "Una muestra de los proyectos que más nos definen."
+    },
+    "portfolioPreview": {
+      "title": "Proyectos destacados",
+      "description": "Explora una muestra aleatoria de nuestros trabajos recientes.",
+      "cta": "Ver todo el portfolio"
+    },
+    "serviciosPreview": {
+      "title": "Nuestros servicios",
+      "description": "Explora nuestros servicios",
+      "cta": "Ver todos los servicios"
+    },
+    "latestPost": {
+      "title": "Última entrada del blog",
+      "cta": "Leer más"
+    },
+    "contact": {
+      "title": "¿Tienes un proyecto en mente?",
+      "description": "¡Hablemos! Estoy aquí para ayudarte a dar vida a tu visión musical.",
+      "cta": "Contáctame"
+    }
+  },
+  "about-prev": {
+    "preview": {
+      "experience": "Más de 10 años componiendo para cine, televisión y videojuegos.",
+      "focus": "Un enfoque artístico y técnico adaptado a cada proyecto.",
+      "commitment": "Compromiso total con la emoción y la narración sonora."
+    }
   },
   "blog": {
     "welcome": "Blog"
@@ -40,7 +74,9 @@
     }
   },
   "portfolio": {
-    "welcome": "Portfolio"
+    "welcome": "Portfolio",
+    "section1": "🎼 Composición / BSO",
+    "section2": "🎤 Producción / Grabación"
   },
   "about": {
     "welcome": "Sobre mí",

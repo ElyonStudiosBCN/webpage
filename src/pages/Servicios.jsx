@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
+import FadeInSection from "../components/fadeInSection";
 
 import imgRecording from "../assets/placeholder.png";
 import imgComposition from "../assets/placeholder.png";
@@ -42,49 +43,51 @@ export default function Servicios() {
   };
 
   return (
-    <section className="section section-light">
-      <div className="card">
-        <h1 className="heading text-primary mb-4">{t("services.welcome")}</h1>
+    <FadeInSection>
+      <section className="section section-light">
+        <div className="card">
+          <h1 className="heading text-primary mb-4">{t("services.welcome")}</h1>
 
-        {services.map((service) => {
-          const isOpen = openId === service.id;
-          return (
-            <div
-              key={service.id}
-              className={`service-block card mb-4 ${isOpen ? "open" : ""}`}
-            >
+          {services.map((service) => {
+            const isOpen = openId === service.id;
+            return (
               <div
-                className="service-title"
-                onClick={() => toggleSection(service.id)}
+                key={service.id}
+                className={`service-block card mb-4 ${isOpen ? "open" : ""}`}
               >
-                {service.title}
-              </div>
-              <div
-                className={`service-content-wrapper ${
-                  isOpen ? "expanded" : ""
-                }`}
-              >
-                <div className="service-content">
-                  <div className="service-details">
-                    <p className="text-muted">{service.text}</p>
-                    <img
-                      src={service.image}
-                      alt={service.title}
-                      className="service-image"
-                    />
+                <div
+                  className="service-title"
+                  onClick={() => toggleSection(service.id)}
+                >
+                  {service.title}
+                </div>
+                <div
+                  className={`service-content-wrapper ${
+                    isOpen ? "expanded" : ""
+                  }`}
+                >
+                  <div className="service-content">
+                    <div className="service-details">
+                      <p className="text-muted">{service.text}</p>
+                      <img
+                        src={service.image}
+                        alt={service.title}
+                        className="service-image"
+                      />
+                    </div>
+                    <Link
+                      to={`/contacto?service=${service.id}`}
+                      className="btn btn-accent mt-2 service-button"
+                    >
+                      {t("services.contactButton")}
+                    </Link>
                   </div>
-                  <Link
-                    to={`/contacto?service=${service.id}`}
-                    className="btn btn-accent mt-2 service-button"
-                  >
-                    {t("services.contactButton")}
-                  </Link>
                 </div>
               </div>
-            </div>
-          );
-        })}
-      </div>
-    </section>
+            );
+          })}
+        </div>
+      </section>
+    </FadeInSection>
   );
 }

@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { marked } from "marked";
+import FadeInSection from "../components/fadeInSection";
 
 const posts = import.meta.glob("../posts/*.md", {
   query: "?raw",
@@ -24,8 +25,10 @@ export default function Post() {
   }, [slug]);
 
   return (
-    <section className="section section-light container card">
-      <article dangerouslySetInnerHTML={{ __html: content }} />
-    </section>
+    <FadeInSection>
+      <section className="section section-light container card">
+        <article dangerouslySetInnerHTML={{ __html: content }} />
+      </section>
+    </FadeInSection>
   );
 }

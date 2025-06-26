@@ -1,0 +1,17 @@
+.video-wrapper {
+  position: relative;
+  width: 65vw;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9; /* Usa esto si tienes soporte moderno */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+/* Fallback para navegadores sin support de aspect-ratio */
+.video-wrapper iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
