@@ -1,4 +1,4 @@
-/* Navbar.jsx */
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useTheme from "../hooks/useTheme";
@@ -16,12 +16,22 @@ export default function Navbar() {
     i18n.changeLanguage(i18n.language === "es" ? "en" : "es");
   };
 
+  const [menuOpen, setMenuOpen] = useState(false);
+  const toggleMenu = () => setMenuOpen((prev) => !prev);
+
   return (
     <nav className="section container navbar">
       <div className="logo">
         <img src={logo} alt="Elyon Studios Logo" className="logo-image" />
       </div>
-      <div className="rightside">
+
+      {/* Botón hamburguesa (solo visible en móviles) */}
+      <button className="hamburger" onClick={toggleMenu} aria-label={t("aria.menu")}>
+        ☰
+      </button>
+
+      {/* Menú principal, visible en desktop o si menuOpen=true */}
+      <div className={`rightside ${menuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           <li className={isActive("/") ? "active" : ""}>
             <Link to="/">{t("nav.home")}</Link>
@@ -58,6 +68,8 @@ export default function Navbar() {
             <Link to="/contacto">{t("nav.contact")}</Link>
           </li>
         </ul>
+
+        {/* Acciones: modo oscuro + idioma */}
         <div className="layout-actions">
           <button onClick={toggleTheme} aria-label={t("aria.theme")}>🌓</button>
           <button onClick={toggleLanguage} aria-label={t("aria.language")}>🌐</button>
