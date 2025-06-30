@@ -36,6 +36,16 @@
   width: 100%;
 }
 
+.map-container {
+    flex-basis: 100%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    margin-top: 1rem;
+  }
+
 @media (min-width: 768px) {
   .contacto-wrapper {
     flex-direction: row;

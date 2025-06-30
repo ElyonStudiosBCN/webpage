@@ -173,10 +173,32 @@
     flex-direction: row;
     align-items: center;
     justify-content: flex-end;
+    opacity: 1;
+    transform: none;
+    border: 0;
+    z-index: 100;
+    position: inherit;
+    background-color: var(--color-navbar-bg);
+    padding-bottom: 0em;
   }
 
   .nav-links {
     flex-direction: row;
     margin-right: 1rem;
+  }
+  .rightside,
+  .rightside.open {
+    position: static !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    z-index: auto !important;
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: var(--color-navbar-bg);
+    border: none;
+    padding: 0;
   }
 }

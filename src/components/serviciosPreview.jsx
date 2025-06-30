@@ -43,7 +43,7 @@ export default function ServiciosPreview() {
                 </Link>
                 ))}
             </div>
-            <Link to="/servicios" className="btn btn-accent mt-4">
+            <Link to="/servicios" className="btn btn-primary mt-4">
                 {t("home.serviciosPreview.cta")}
             </Link>
         </div>

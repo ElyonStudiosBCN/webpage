@@ -2,11 +2,13 @@
 .pau-image {
     max-width: 25em;
     border-radius: 1em;
+    margin-top: 1em;
 }
 .aboutme-container {
     display: flex;
     justify-content: space-between;
     align-items: top;
+    flex-direction: column;
 }
 .text2 {
     margin-top: 2em;
@@ -14,4 +16,20 @@
 .text1 {
     margin-right: 3em;
     text-align: justify;
+}
+
+
+/* --------------- DESKTOP MEDIA QUERY --------------- */
+@media (min-width: 768px) {
+    .aboutme-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: top;
+        flex-direction: row;
+    }
+    .pau-image {
+        max-width: 25em;
+        border-radius: 1em;
+        margin-top: 0;
+    }
 }

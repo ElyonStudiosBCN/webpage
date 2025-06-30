@@ -36,7 +36,7 @@ export default function PortfolioPreview() {
                 </a>
                 ))}
             </div>
-            <Link to="/portfolio" className="btn btn-accent mt-4">
+            <Link to="/portfolio" className="btn btn-primary mt-4">
                 {t("home.portfolioPreview.cta")}
             </Link>
         </div>

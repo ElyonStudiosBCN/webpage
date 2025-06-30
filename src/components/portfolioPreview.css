@@ -1,14 +1,13 @@
 .portfolio-preview-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 4.5rem;
-  margin: 2rem;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
 }
 
 .portfolio-preview-item {
     transition: transform 0.2s ease;
     text-align: center;
-    padding: 0.7rem;
+    padding: 1.5rem;
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -28,4 +27,26 @@
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   margin-bottom: 0.5rem;
+}
+
+/* --------------- DESKTOP MEDIA QUERY --------------- */
+@media (min-width: 768px) {
+  .portfolio-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.5rem;
+    margin: 2rem;
+  }
+  .portfolio-preview-item {
+      transition: transform 0.2s ease;
+      text-align: center;
+      padding: 0.7rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      aspect-ratio: 1 / 1;
+  }
 }

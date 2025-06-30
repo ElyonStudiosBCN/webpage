@@ -9,7 +9,7 @@
 .service-title {
   cursor: pointer;
   font-weight: bold;
-  padding: 1rem;
+  padding: 2rem;
   font-size: 1.2rem;
   background-color: var(--color-surface);
   color: var(--color-primary);
@@ -37,9 +37,10 @@
 
 .service-details {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  text-align: center;
 }
 
 .service-button {
@@ -49,6 +50,7 @@
 .service-image {
   max-width: 100%;
   border-radius: 0.75rem;
+  margin-top: 1em;
 }
 
 .service-title::after {
@@ -64,4 +66,29 @@
 .logo-wrapper {
     display: flex;
     align-items: center;
+}
+
+/* --------------- DESKTOP MEDIA QUERY --------------- */
+@media (min-width: 768px) {
+  .service-title {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: var(--color-surface);
+    color: var(--color-primary);
+    border-bottom: 1px solid var(--color-border);
+    user-select: none;
+  }
+  .service-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .service-image {
+    max-width: 100%;
+    border-radius: 0.75rem;
+  }
+
 }

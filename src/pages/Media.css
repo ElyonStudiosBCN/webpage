@@ -4,7 +4,7 @@
 
 .media-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 1rem;
   margin-top: 1rem;
 }
@@ -24,7 +24,40 @@
 
 .media-grid-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 2em;
-    grid-template-rows: 1fr 1fr;
+}
+
+/* --------------- DESKTOP MEDIA QUERY --------------- */
+@media (min-width: 768px) {
+  .media-block {
+    padding: 1.5rem;
+  }
+
+  .media-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .media-grid iframe {
+    width: 100%;
+    height: 200px;
+    border-radius: 1rem;
+    border: none;
+  }
+
+  .subheading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+
+  .media-grid-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2em;
+      grid-template-rows: 1fr 1fr;
+  }
 }

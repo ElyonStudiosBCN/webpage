@@ -35,3 +35,9 @@
 .portfolio-item:hover {
   transform: scale(1.05);
 }
+
+/* --------------- DESKTOP MEDIA QUERY --------------- */
+@media (min-width: 768px) {
+  
+
+}

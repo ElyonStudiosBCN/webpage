@@ -16,8 +16,27 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 1em;
 }
 
 .collapsible-content {
   margin-top: 1rem;
+}
+/* --------------- DESKTOP MEDIA QUERY --------------- */
+@media (min-width: 768px) {
+  .collapsible-header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 1rem 0;
+    cursor: pointer;
+    border-bottom: 2px solid var(--color-border);
+    color: var(--color-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

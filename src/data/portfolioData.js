@@ -3,6 +3,7 @@ export const portfolioData = {
     Películas: [
       { title: "Cortometraje A", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
       { title: "Película B", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
+      { title: "Película C", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
     ],
     Anuncios: [
       { title: "Campaña X", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
