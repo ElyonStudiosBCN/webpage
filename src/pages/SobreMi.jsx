@@ -17,6 +17,7 @@ export default function SobreMi() {
               <p className="text-muted text1">{t("about.description1.p1")}</p>
               <p className="text-muted text1">{t("about.description1.p2")}</p>
               <p className="text-muted text1">{t("about.description1.p3")}</p>
+              <p className="text-muted text1">{t("about.description1.p4")}</p>
             </div>
             <img src={pau} alt="Pau Lefler" className="pau-image"/>
           </div>

@@ -6,9 +6,9 @@ import { useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import FadeInSection from "../components/fadeInSection";
 
-import imgRecording from "../assets/placeholder.png";
-import imgComposition from "../assets/placeholder.png";
-import imgCoaching from "../assets/placeholder.png";
+import imgRecording from "../assets/estudio4.jpeg";
+import imgComposition from "../assets/estudio2.jpeg";
+import imgCoaching from "../assets/estudio1.jpeg";
 
 export default function Servicios() {
   const { t } = useTranslation();

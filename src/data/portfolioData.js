@@ -1,19 +1,17 @@
 export const portfolioData = {
   composicion: {
     Películas: [
-      { title: "Cortometraje A", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
-      { title: "Película B", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
-      { title: "Película C", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
+      { title: "Sombría - Opening", img: "/assets/sombria.png", link: "https://www.youtube.com/watch?v=NskmDtH3kNs" },
     ],
-    Anuncios: [
-      { title: "Campaña X", img: "/assets/placeholder.png", link: "https://youtu.be/..." },
+    Anuncios: [],
+    Videojuegos: [
+      { title: "Trailer World Of Warcraft", img: "/assets/wow.png", link: "https://www.youtube.com/watch?v=MiUnKSjmPWo" },
     ],
-    Videojuegos: [],
     Otros: [],
   },
   produccion: {
     Pop: [
-      { title: "Canción Pop A", img: "/assets/placeholder.png", link: "https://spotify.com/..." },
+      { title: "Pool Loop - Winona", img: "/assets/pooloop.png", link: "https://open.spotify.com/intl-es/track/0P1tisjiOdkKZ5gdfzrktD?si=f09189a0f9714557" },
     ],
     Rock: [],
     Jazz: [],
