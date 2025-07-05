@@ -1,5 +1,5 @@
 import CollapsibleSection from "../components/collapsibleSection";
-import { portfolioData } from "../data/portfolioData";
+import { portfolioData } from "../data/portfolioDatav2";
 import { useTranslation } from "react-i18next";
 import FadeInSection from "../components/fadeInSection";
 import "./Portfolio.css";

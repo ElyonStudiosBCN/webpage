@@ -26,7 +26,7 @@ export default function Home() {
           <p className="mb-4">{t("home.videoSection.description")}</p>
           <div className="video-wrapper">
             <iframe
-              src="https://www.youtube.com/embed/1JbPYuzIcZI"
+              src="https://www.youtube.com/embed/YgDaXEvUaXE"
               title="Showreel"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

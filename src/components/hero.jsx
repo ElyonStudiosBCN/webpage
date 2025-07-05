@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <video className="hero-video" autoPlay muted loop playsInline>
-        <source src="/assets/hero.mp4" type="video/mp4" />
+        <source src="/assets/hero2.mp4" type="video/mp4" />
         Tu navegador no soporta el video.
       </video>
       <div className="hero-overlay" />

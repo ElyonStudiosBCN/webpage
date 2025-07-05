@@ -1,7 +1,7 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import "./ServiciosPreview.css";
+import "./serviciosPreview.css";
 
 import imgRecording from "../assets/placeholder.png";
 import imgComposition from "../assets/placeholder.png";
