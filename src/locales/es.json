@@ -1,4 +1,10 @@
 {
+  "seo": {
+    "home": {
+      "title": "Elyon Studios – Estudio de Música en Barcelona",
+      "description": "Estudio creativo de música profesional en Barcelona. Producción, grabación, composición y coaching vocal/piano."
+    }
+  },
   "nav": {
     "home": "Inicio",
     "services": "Servicios",

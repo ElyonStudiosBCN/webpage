@@ -8,11 +8,24 @@ import ServiciosPreview from "../components/serviciosPreview";
 import LatestPost from "../components/latestPost";
 import FadeInSection from "../components/fadeInSection";
 
+import { Helmet } from "react-helmet";
+
 export default function Home() {
   const { t } = useTranslation();
 
   return (
     <div className="home">
+
+      {/* SEO */}
+      <Helmet>
+        <title>{t("seo.home.title")}</title>
+        <meta name="description" content={t("seo.home.description")} />
+        <meta property="og:title" content={t("seo.home.title")} />
+        <meta property="og:description" content={t("seo.home.description")} />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://elyonstudiosbcn.com/" />
+        <meta property="og:image" content="/assets/SEO.png" />
+      </Helmet>
 
       {/* HERO */}
       <section className="hero">
