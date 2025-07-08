@@ -89,20 +89,20 @@
 ### ⚙️ Etapa 4 – Funcionalidades y Optimización
 
 - [x] Añadir animaciones de entrada con `framer-motion` o CSS   
-- [ ] Adaptación responsive y mobile-first  
-- [ ] Añadir SEO básico con React Helmet (títulos, meta tags dinámicos)  
-- [ ] Mejorar accesibilidad según WCAG 2.1  
+- [x] Adaptación responsive y mobile-first  
+- [x] Añadir SEO básico con React Helmet (títulos, meta tags dinámicos)  
+- [x] Mejorar accesibilidad según WCAG 2.1  
 
 ---
 
 ### 🌐 Etapa 5 – Desarrollo de Páginas (CONTENIDO)
 
-- [ ] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
+- [x] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
 - [ ] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
 - [ ] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
-- [ ] **Sobre mí:** Biografía, experiencia, foto, visión artística  
-- [ ] **Media:** Integración de YouTube, Spotify, blog, Instagram  
-- [ ] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
+- [x] **Sobre mí:** Biografía, experiencia, foto, visión artística  
+- [x] **Media:** Integración de YouTube, Spotify, blog, Instagram  
+- [x] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
 - [ ] **Blog:** Blog con posts que puedan crearse y añadirse facilmente  
 
 ---
