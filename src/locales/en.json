@@ -67,15 +67,15 @@
     "welcome": "Services",
     "contactButton": "Contact",
     "recording": {
-      "title": "Recorsing / Production",
+      "title": "Studio: Recording, Production, Mix & Mastering",
       "text": "We offer professional recording, mastering and musical production adapted to your needs."
     },
     "composition": {
-      "title": "Composition / BSO",
+      "title": "Audiovisual Composition",
       "text": "We create original soundtracks for films, videogames, advertisements and more."
     },
     "coaching": {
-      "title": "Piano & Vocal Coaching",
+      "title": "Vocal Coaching & Piano Lessons",
       "text": "Personalized piano and vocal coaching for every level."
     }
   },
@@ -121,8 +121,8 @@
     "phoneLabel": "Phone",
     "addressLabel": "Address",
     "options": {
-      "recording": "Recording / Production",
-      "composition": "Composition / Soundtrack",
+      "recording": "Recording / Production / Mix / Mastering",
+      "composition": "Audiovisual Composition",
       "coaching": "Coaching",
       "other": "Other"
     }
