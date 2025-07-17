@@ -3,18 +3,27 @@
   margin-bottom: 0.5rem;
   font-size: 1.2rem;
   color: var(--color-muted);
+  margin-bottom: 2rem;
 }
 
 .portfolio-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 1.5rem;
+  margin-top: 1rem;
 }
 
 .portfolio-item {
   width: 120px;
   text-align: center;
   transition: transform 0.2s ease;
+  display: grid;
+  align-items: stretch;
+  align-content: space-between;
+  justify-items: center;
+  justify-content: center;
+  grid-template-rows: 3rem 9rem 3rem;
+  border-bottom: 1rem var(--color-border);
 }
 
 .portfolio-item img {

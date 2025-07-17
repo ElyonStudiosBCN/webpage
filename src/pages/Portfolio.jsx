@@ -38,6 +38,7 @@ export default function Portfolio() {
                           className="portfolio-item"
                           key={idx}
                         >
+                          <span>{item.style}</span>
                           <img src={item.img} alt={item.title} />
                           <span>{item.title}</span>
                         </a>
@@ -49,27 +50,20 @@ export default function Portfolio() {
             </CollapsibleSection>
 
             <CollapsibleSection title={t("portfolio.section2")}>
-              {Object.entries(portfolioData.produccion).map(([genre, items]) => (
-                items.length > 0 && (
-                  <div key={genre} className="portfolio-subsection">
-                    <h2>{genre}</h2>
-                    <div className="portfolio-grid">
-                      {items.map((item, idx) => (
-                        <a
-                          href={item.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="portfolio-item"
-                          key={idx}
-                        >
-                          <img src={item.img} alt={item.title} />
-                          <span>{item.title}</span>
-                        </a>
-                      ))}
-                    </div>
+              {Array.isArray(portfolioData.produccion) && (
+                <div className="portfolio-subsection">
+                  <h2>Composición</h2>
+                  <div className="portfolio-grid">
+                    {portfolioData.produccion.map((item, idx) => (
+                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-item" key={idx}>
+                        <span>{item.style}</span>
+                        <img src={item.img} alt={item.title} />
+                        <span>{item.title}</span>
+                      </a>
+                    ))}
                   </div>
-                )
-              ))}
+                </div>
+              )}
             </CollapsibleSection>
           </div>
         </div>
