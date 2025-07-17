@@ -8,7 +8,7 @@
 .servicios-preview-item {
     transition: transform 0.2s ease;
     text-align: center;
-    padding: 1.5rem;
+    padding: 0.5rem;
     text-decoration: none;
     color: inherit;
     display: flex;
@@ -42,7 +42,7 @@
   .servicios-preview-item {
       transition: transform 0.2s ease;
       text-align: center;
-      padding: 0.7rem;
+      padding: 1.5rem;
       text-decoration: none;
       color: inherit;
       display: flex;
