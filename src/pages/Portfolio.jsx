@@ -25,35 +25,51 @@ export default function Portfolio() {
             <h1 className="heading text-primary">{t("portfolio.welcome")}</h1>
 
             <CollapsibleSection title={t("portfolio.section1")}>
-              {Object.entries(portfolioData.composicion).map(([subcat, items]) => 
-                items.length > 0 &&(
-                <div key={subcat} className="portfolio-subsection">
-                  <h2>{subcat}</h2>
-                  <div className="portfolio-grid">
-                    {items.map((item, idx) => (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-item" key={idx}>
-                        <div className="portfolio-item-title">{item.title}</div>
-                        <img src={item.img} alt={item.title} />
-                        <span>{item.style}</span>
-                      </a>
-                    ))}
+              {Object.entries(portfolioData.composicion).map(([subcat, items]) => (
+                items.length > 0 && (
+                  <div key={subcat} className="portfolio-subsection">
+                    <h2>{subcat}</h2>
+                    <div className="portfolio-grid">
+                      {items.map((item, idx) => (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="portfolio-item"
+                          key={idx}
+                        >
+                          <img src={item.img} alt={item.title} />
+                          <span>{item.title}</span>
+                        </a>
+                      ))}
+                    </div>
                   </div>
-                </div>
+                )
               ))}
             </CollapsibleSection>
 
             <CollapsibleSection title={t("portfolio.section2")}>
-              <div className="portfolio-subsection">
-                <div className="portfolio-grid">
-                  {portfolioData.produccion.map((item, idx) => (
-                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-item" key={idx}>
-                      <div className="portfolio-item-title">{item.title}</div>
-                      <img src={item.img} alt={item.title} />
-                      <span>{item.style}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
+              {Object.entries(portfolioData.produccion).map(([genre, items]) => (
+                items.length > 0 && (
+                  <div key={genre} className="portfolio-subsection">
+                    <h2>{genre}</h2>
+                    <div className="portfolio-grid">
+                      {items.map((item, idx) => (
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="portfolio-item"
+                          key={idx}
+                        >
+                          <img src={item.img} alt={item.title} />
+                          <span>{item.title}</span>
+                        </a>
+                      ))}
+                    </div>
+                  </div>
+                )
+              ))}
             </CollapsibleSection>
           </div>
         </div>

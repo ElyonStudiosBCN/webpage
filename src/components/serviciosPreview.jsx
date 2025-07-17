@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "./serviciosPreview.css";
 
-import imgRecording from "../assets/placeholder.png";
-import imgComposition from "../assets/placeholder.png";
-import imgCoaching from "../assets/placeholder.png";
+import imgRecording from "../assets/estudio4.jpeg";
+import imgComposition from "../assets/estudio2.jpeg";
+import imgCoaching from "../assets/estudio1.jpeg";
+
 
 export default function ServiciosPreview() {
     const { t } = useTranslation();

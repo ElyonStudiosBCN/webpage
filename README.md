@@ -99,7 +99,7 @@
 
 - [x] **Home:** Introducción clara, llamada a la acción, resumen de servicios  
 - [ ] **Servicios:** Descripción detallada de servicios (grabación, composición, coaching)  
-- [ ] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
+- [x] **Portfolio:** Galería organizada por categorías (BSO, grabación, géneros musicales)  
 - [x] **Sobre mí:** Biografía, experiencia, foto, visión artística  
 - [x] **Media:** Integración de YouTube, Spotify, blog, Instagram  
 - [x] **Contacto:** Formulario funcional, datos de contacto, mapa Google  
@@ -111,10 +111,10 @@
 
 - [ ] Optimizar imágenes y recursos para velocidad  
 - [ ] Auditoría SEO avanzada:  
-  - Etiquetas `<title>` y meta descripción únicas  
-  - Open Graph para redes sociales  
-  - Crear y subir `robots.txt` y `sitemap.xml`  
-  - Configurar Google Search Console y Google Analytics  
+  [x] - Etiquetas `<title>` y meta descripción únicas  
+  [x] - Open Graph para redes sociales  
+  [x] - Crear y subir `robots.txt` y `sitemap.xml`  
+  [ ] - Configurar Google Search Console y Google Analytics   -> primero hace falta tener el dominio
 - [ ] Pruebas cross-browser y responsive  
 - [ ] Publicar en GitHub Pages, Vercel o Netlify  
 - [ ] Configurar URLs amigables y redirecciones si es necesario  

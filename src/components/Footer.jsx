@@ -42,9 +42,9 @@ const Footer = () => {
           <div className="footer-item">
             <h4>{t("footer.followUs")}</h4>
             <div className="footer-social">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
-              <a href="https://spotify.com" target="_blank" rel="noreferrer" aria-label="Spotify"><FaSpotify /></a>
+              <a href="https://www.instagram.com/elyonstudiosbcn/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
+              <a href="https://www.youtube.com/@ELYONSTUDIOSBCN" target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
+              <a href="https://open.spotify.com/intl-es/artist/4ISK1BSIDYujIDZVkYFYNx?si=R6Ks5nXAQ166m--bY9jvxA" target="_blank" rel="noreferrer" aria-label="Spotify"><FaSpotify /></a>
             </div>
           </div>
         </div>
