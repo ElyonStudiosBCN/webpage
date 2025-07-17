@@ -30,7 +30,7 @@ export default function ServiciosPreview() {
 
     return (
         <section className="section container text-center">
-        <div className="card">
+        <div className="card" style={{  "justify-items": "center" }}>
             <h2 className="heading">{t("home.serviciosPreview.title")}</h2>
             <p className="mb-4">{t("home.serviciosPreview.description")}</p>
             <div className="servicios-preview-grid">

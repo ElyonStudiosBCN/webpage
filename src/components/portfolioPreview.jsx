@@ -19,7 +19,7 @@ export default function PortfolioPreview() {
 
   return (
     <section className="section container text-center">
-        <div className="card">
+        <div className="card" style={{  "justify-items": "center" }}>
             <h2 className="heading">{t("home.portfolioPreview.title")}</h2>
             <p className="mb-4">{t("home.portfolioPreview.description")}</p>
             <div className="portfolio-preview-grid">

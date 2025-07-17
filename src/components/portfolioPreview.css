@@ -1,7 +1,11 @@
 .portfolio-preview-grid {
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 2.5rem;
+  margin-bottom: 1rem;
+  justify-items: center;
+  max-width: 80%;
+  margin-top: 2rem;
 }
 
 .portfolio-preview-item {
@@ -15,6 +19,7 @@
     align-items: center;
     justify-content: center;
     aspect-ratio: 1 / 1;
+    width: -webkit-fill-available;
 }
 
 .portfolio-preview-item:hover {
@@ -33,7 +38,7 @@
 @media (min-width: 768px) {
   .portfolio-preview-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 4.5rem;
     margin: 2rem;
   }
