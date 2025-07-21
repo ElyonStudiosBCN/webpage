@@ -1,16 +1,9 @@
 [
-    {
-    "id": "plantilla",
-    "title": "POST PLANTILLA",
-    "date": "2025-06-25",
-    "excerpt": "Este post es una plantilla.",
-    "filename": "plantilla.md"
-  },
   {
     "id": "post-001",
-    "title": "Mi primer post",
-    "date": "2025-06-24",
-    "excerpt": "Este es el resumen de mi primer post.",
+    "title": "EL ROL DE LA MÚSICA EN EL MUNDO AUDIOVISUAL",
+    "date": "2025-07-21",
+    "excerpt": "Hola, soy Pau Lefler, músico profesional y director de ELYON STUDIOS BARCELONA, y en este primer episodio del blog quiero invitarte a descubrir conmigo el papel fundamental que tiene la música en el mundo audiovisual. Exploraremos cómo una buena banda sonora puede transformar una escena, hablaremos del poder del leitmotiv, de la sincronización con los efectos visuales, de la creación de melodías pegadizas para anuncios, del universo sonoro en los videojuegos y de la importancia de los openings en las series. También compartiré cómo se compone y produce música hoy en día, con qué herramientas trabajamos y cómo logramos emocionar al espectador a través del sonido. Si te interesa este fascinante mundo, acompáñame en esta serie y no olvides seguirnos para no perderte nada.",
     "filename": "post-001.md"
   }
 ]

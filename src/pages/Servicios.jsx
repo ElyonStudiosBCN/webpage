@@ -22,19 +22,25 @@ export default function Servicios() {
     {
       id: "recording",
       title: t("services.recording.title"),
-      text: t("services.recording.text"),
+      text1: t("services.recording.text1"),
+      quests: t("services.recording.quests", { returnObjects: true }),
+      text2: t("services.recording.text2"),
       image: imgRecording,
     },
     {
       id: "composition",
       title: t("services.composition.title"),
-      text: t("services.composition.text"),
+      text1: t("services.composition.text1"),
+      quests: t("services.composition.quests", { returnObjects: true }),
+      text2: t("services.composition.text2"),
       image: imgComposition,
     },
     {
       id: "coaching",
       title: t("services.coaching.title"),
-      text: t("services.coaching.text"),
+      text1: t("services.coaching.text1"),
+      quests: t("services.coaching.quests", { returnObjects: true }),
+      text2: t("services.coaching.text2"),
       image: imgCoaching,
     },
   ];
@@ -80,7 +86,15 @@ export default function Servicios() {
                   >
                     <div className="service-content">
                       <div className="service-details">
-                        <p className="text-muted">{service.text}</p>
+                        <div className="service-text">
+                          <p className="text-muted">{service.text1}</p>
+                          <div className="service-quests">
+                            {service.quests.map((quest, index) => (
+                              <p key={index} className="text-muted">{quest}</p>
+                            ))}
+                          </div>
+                          <p className="text-muted">{service.text2}</p>
+                        </div>
                         <img
                           src={service.image}
                           alt={service.title}

@@ -26,6 +26,12 @@
   border-bottom: 1rem var(--color-border);
 }
 
+.preview-style {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+  margin-bottom: 0.5rem;
+}
+
 .portfolio-item img {
   width: 100px;
   height: 100px;

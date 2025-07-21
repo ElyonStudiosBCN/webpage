@@ -67,6 +67,13 @@
     display: flex;
     align-items: center;
 }
+.service-text {
+  text-align: center;
+}
+.service-quests {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 /* --------------- DESKTOP MEDIA QUERY --------------- */
 @media (min-width: 768px) {
@@ -79,6 +86,9 @@
     color: var(--color-primary);
     border-bottom: 1px solid var(--color-border);
     user-select: none;
+  }
+  .service-text {
+    text-align: left;
   }
   .service-details {
     display: flex;

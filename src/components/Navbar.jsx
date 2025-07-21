@@ -84,15 +84,11 @@ export default function Navbar() {
           <li className={isActive("/sobremi") ? "active" : ""}>
             <Link to="/sobremi" onClick={closeMenu}>{t("nav.about")}</Link>
           </li>
-          <li className={`dropdown ${isActive("/media") ? "active" : ""}`}>
+          <li className={isActive("/media") ? "active" : ""}>
             <Link to="/media" onClick={closeMenu}>{t("nav.media")}</Link>
-            <ul className="dropdown-menu">
-              <li>
-                <Link to="/blog" onClick={closeMenu}>
-                  {t("media.blog")}
-                </Link>
-              </li>
-            </ul>
+          </li>
+          <li className={isActive("/blog") ? "active" : ""}>
+            <Link to="/blog" onClick={closeMenu}>{t("nav.blog")}</Link>
           </li>
           <li className={isActive("/contacto") ? "active" : ""}>
             <Link to="/contacto" onClick={closeMenu}>{t("nav.contact")}</Link>

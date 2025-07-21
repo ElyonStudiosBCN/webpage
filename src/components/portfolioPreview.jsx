@@ -31,6 +31,7 @@ export default function PortfolioPreview() {
                     rel="noopener noreferrer"
                     className="portfolio-preview-item card"
                 >
+                    <span className='preview-style'>{item.style}</span>
                     <img src={item.img} alt={item.title} />
                     <span>{item.title}</span>
                 </a>

@@ -11,7 +11,8 @@
     "portfolio": "Portfolio",
     "about": "Sobre mí",
     "media": "Media",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "blog": "Blog"
   },
   "footer": {
     "tagline": "Producción musical, composición y coaching.",
@@ -68,15 +69,32 @@
     "contactButton": "Contactar",
     "recording": {
       "title": "Estudio: Grabación, Produccion, Mezcla, y Mastering",
-      "text": "Ofrecemos grabación profesional, mezcla y producción musical adaptada a tus necesidades."
+      "text1": "En Elyon Studios Bcn te ofrecemos nuestros servicios en el estudio para poder cumplir tus sueños, pasar de tus ideas en la cabeza a una producción musical profesional. Los servicios en el estudio pueden ser integrales (todo incluido) o solo algunas de las partes (solo grabar, por ejemplo).",
+      "quests": [
+        "¿Quieres crear tu canción de 0 a 100, desde tener tu idea en la cabeza hasta tenerla totalmente masterizada?",
+        "¿Sólo necesitas grabar con calidad profesional y después tu mismo la producirás?",
+        "¿Tienes todo grabado y quieres producir tu canción, mezclarla y/o masterizarla?"
+      ],
+      "text2": "Completa el formulario y hablemos de cómo hacer realidad tus nuevas creaciones."
     },
     "composition": {
-      "title": "Composición Audiovisual",
-      "text": "Creamos música original para películas, anuncios, videojuegos y mucho más."
+      "title": "Composición Audiovisual: Peliculas, Cortos, Anuncios y Videojuegos",
+      "text1": "En Elyon Studios Bcn te ofrecemos nuestros servicios, nuestro conocimiento y todas nuestras ganas para crear la música de tu producción audiovisual.",
+      "quests": [
+        "¿Necesitas una banda sonora original para tu película, serie o documental?",
+        "¿Estás creando un corto y no tienes aún la música?",
+        "¿Quieres un jingle pegadizo para tu nuevo anuncio?",
+        "¿Estás desarrollando un nuevo juego y buscas crear un universo sonoro increíble?"
+      ],
+      "text2": "Completa el formulario y haznos saber cómo podemos ayudarte con tu proyecto."
     },
     "coaching": {
       "title": "Vocal Coaching y Clases de Piano",
-      "text": "Clases personalizadas de piano y técnica vocal para todos los niveles."
+      "text1": "En Elyon Studios BCN también ofrecemos sesiones de canto y piano para los artistas que quieran mejorar sus habilidades musicales sobretodo enfocados en las futuras grabaciones. Tenemos más de 15 años de experiencia ofreciendo clases de canto y piano.",
+      "quests": [
+        "Se ofrecen sesiones de vocal coaching para mejorar la calidad de las grabaciones vocales de los cantantes y dar muchos tips de cómo grabar correctamente las voces. También ofrecemos clases de piano moderno orientadas sobretodo a artistas cantantes que quieren aprender música y poder acompañarse mientras canten sus temas."
+      ],
+      "text2": "Completa el formulario para ver en qué estás interesado y podamos programar tus sesiones."
     }
   },
   "portfolio": {
@@ -98,9 +116,9 @@
     "welcome": "Media",
     "youtube": "Canal de YouTube",
     "spotify": "Escúchame en Spotify",
-    "blog": "Blog",
-    "blogDescription": "Descubre reflexiones, procesos creativos y novedades.",
-    "blogButton": "Ir al Blog",
+    "soundcloud": "Soundcloud",
+    "soundcloudDescription": "",
+    "soundcloudButton": "Ir al Soundcloud",
     "instagram": "Instagram",
     "instagramDescription": "Sígueme para contenido exclusivo y detrás de escenas.",
     "instagramButton": "Ver en Instagram"

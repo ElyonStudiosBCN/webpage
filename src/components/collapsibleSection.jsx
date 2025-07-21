@@ -2,7 +2,7 @@ import { useState } from "react";
 import "./collapsibleSection.css";
 
 export default function CollapsibleSection({ title, children }) {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   return (
     <div className="collapsible-section">
