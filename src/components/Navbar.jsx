@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import useTheme from "../hooks/useTheme";
@@ -18,61 +18,91 @@ export default function Navbar() {
 
   const [menuOpen, setMenuOpen] = useState(false);
   const toggleMenu = () => setMenuOpen((prev) => !prev);
+  const closeMenu = () => setMenuOpen(false);
+
+  const menuRef = useRef();
+
+  // Close menu when clicking outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    if (menuOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <nav className="section container navbar">
       <div className="logo">
-        <img src={logo} alt="Elyon Studios Logo" className="logo-image" />
+        <Link to="/" onClick={closeMenu}>
+          <img src={logo} alt="Elyon Studios Logo" className="logo-image" />
+        </Link>
       </div>
 
-      {/* Botón hamburguesa (solo visible en móviles) */}
+      {/* Hamburger button for mobile */}
       <button className="hamburger" onClick={toggleMenu} aria-label={t("aria.menu")}>
         ☰
       </button>
 
-      {/* Menú principal, visible en desktop o si menuOpen=true */}
-      <div className={`rightside ${menuOpen ? "open" : ""}`}>
+      {/* Main menu */}
+      <div ref={menuRef} className={`rightside ${menuOpen ? "open" : ""}`}>
         <ul className="nav-links">
           <li className={isActive("/") ? "active" : ""}>
-            <Link to="/">{t("nav.home")}</Link>
+            <Link to="/" onClick={closeMenu}>{t("nav.home")}</Link>
           </li>
           <li className={`dropdown ${isActive("/servicios") ? "active" : ""}`}>
-            <Link to="/servicios">{t("nav.services")}</Link>
+            <Link to="/servicios" onClick={closeMenu}>{t("nav.services")}</Link>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/servicios?service=recording">{t("services.recording.title")}</Link>
+                <Link to="/servicios?service=recording" onClick={closeMenu}>
+                  {t("services.recording.title")}
+                </Link>
               </li>
               <li>
-                <Link to="/servicios?service=composition">{t("services.composition.title")}</Link>
+                <Link to="/servicios?service=composition" onClick={closeMenu}>
+                  {t("services.composition.title")}
+                </Link>
               </li>
               <li>
-                <Link to="/servicios?service=coaching">{t("services.coaching.title")}</Link>
+                <Link to="/servicios?service=coaching" onClick={closeMenu}>
+                  {t("services.coaching.title")}
+                </Link>
               </li>
             </ul>
           </li>
           <li className={isActive("/portfolio") ? "active" : ""}>
-            <Link to="/portfolio">{t("nav.portfolio")}</Link>
+            <Link to="/portfolio" onClick={closeMenu}>{t("nav.portfolio")}</Link>
           </li>
           <li className={isActive("/sobremi") ? "active" : ""}>
-            <Link to="/sobremi">{t("nav.about")}</Link>
+            <Link to="/sobremi" onClick={closeMenu}>{t("nav.about")}</Link>
           </li>
           <li className={`dropdown ${isActive("/media") ? "active" : ""}`}>
-            <Link to="/media">{t("nav.media")}</Link>
+            <Link to="/media" onClick={closeMenu}>{t("nav.media")}</Link>
             <ul className="dropdown-menu">
               <li>
-                <Link to="/blog">{t("media.blog")}</Link>
+                <Link to="/blog" onClick={closeMenu}>
+                  {t("media.blog")}
+                </Link>
               </li>
             </ul>
           </li>
           <li className={isActive("/contacto") ? "active" : ""}>
-            <Link to="/contacto">{t("nav.contact")}</Link>
+            <Link to="/contacto" onClick={closeMenu}>{t("nav.contact")}</Link>
           </li>
         </ul>
 
-        {/* Acciones: modo oscuro + idioma */}
+        {/* Actions: theme and language toggle */}
         <div className="layout-actions">
-          <button onClick={toggleTheme} aria-label={t("aria.theme")}>🌓</button>
-          <button onClick={toggleLanguage} aria-label={t("aria.language")}>🌐</button>
+          <button onClick={() => { toggleTheme(); closeMenu(); }} aria-label={t("aria.theme")}>🌓</button>
+          <button onClick={() => { toggleLanguage(); closeMenu(); }} aria-label={t("aria.language")}>🌐</button>
         </div>
       </div>
     </nav>

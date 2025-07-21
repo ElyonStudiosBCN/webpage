@@ -129,7 +129,7 @@
 
 .rightside {
     position: fixed;
-    top: 90px;
+    top: 75px;
     right: 0;
     width: 100%;
     background-color: var(--color-bg-soft);
