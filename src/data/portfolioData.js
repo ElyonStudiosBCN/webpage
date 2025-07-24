@@ -22,6 +22,7 @@ export const portfolioData = {
   },
   produccion: [
     { title: "Pool Loop - Winona", style: "Pop", img: "/assets/portfolio/pooloop.png", link: "https://open.spotify.com/intl-es/track/0P1tisjiOdkKZ5gdfzrktD?si=f09189a0f9714557" },
+    { title: "Seashore - Gabriela", style: "Pop", img: "/assets/portfolio/seashore.png", link: "https://open.spotify.com/intl-es/track/6MnG1MfQahksNu6ZF9SkYs?si=d4d703508dcf46f9" },
     { title: "Songs of the Heart", style: "Piano", img: "/assets/portfolio/pau-piano.png", link: "https://open.spotify.com/intl-es/album/1KuXm5M0haFilwcsAw2iXs?si=WtKIYrXOQTKMfTh1IjeliA" },
     { title: "Spiritual Journey", style: "Spiritual", img: "/assets/portfolio/spiritual-journey.png", link: "https://open.spotify.com/intl-es/album/7wbRpjw7EKhATbI1i6gay1?si=jKHdAc5MQzu2WUC8SERqtg" },
     { title: "Bohemian Rhapsody - Pau Lefler", style: 'Cover', img: "/assets/portfolio/quenn.jpg", link: "https://soundcloud.com/elyonstudiosbcn/bohemian-rhapsody-pau-cover" },
@@ -34,3 +35,10 @@ export const portfolioData = {
     { title: "Regina Caeli - Pau Lefler", style: "Spiritual", img: "/assets/portfolio/regina.png", link: "https://soundcloud.com/elyonstudiosbcn/regina-caeli" },
   ],
 };
+
+export const portfolioDataPreview = [
+  { title: "Sombría", style: 'Opening', img: "/assets/portfolio/sombria.png", link: "https://www.youtube.com/watch?v=NskmDtH3kNs" },
+  { title: "Seashore - Gabriela", style: "Pop", img: "/assets/portfolio/seashore.png", link: "https://open.spotify.com/intl-es/track/6MnG1MfQahksNu6ZF9SkYs?si=d4d703508dcf46f9" },
+  { title: "Nacer en Dios", style:"Short film", img: "/assets/portfolio/nacer-en-dios.png", link: "https://www.youtube.com/watch?v=ULxdaHsixpA" },
+  { title: "Pool Loop - Winona", style: "Pop", img: "/assets/portfolio/pooloop.png", link: "https://open.spotify.com/intl-es/track/0P1tisjiOdkKZ5gdfzrktD?si=f09189a0f9714557" }
+]

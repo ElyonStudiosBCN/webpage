@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaInstagram, FaYoutube, FaSpotify } from "react-icons/fa";
+import { FaInstagram, FaYoutube, FaSpotify, FaSoundcloud } from "react-icons/fa";
 import useTheme from "../hooks/useTheme";
 import "./Navbar.css";
 import logo from "../assets/logo-nobg-onlytext.png";
@@ -52,6 +52,7 @@ export default function Navbar() {
           <a href="https://www.instagram.com/elyonstudiosbcn/" target="_blank" rel="noreferrer" aria-label="Instagram"><FaInstagram /></a>
           <a href="https://www.youtube.com/@ELYONSTUDIOSBCN" target="_blank" rel="noreferrer" aria-label="YouTube"><FaYoutube /></a>
           <a href="https://open.spotify.com/intl-es/artist/4ISK1BSIDYujIDZVkYFYNx?si=R6Ks5nXAQ166m--bY9jvxA" target="_blank" rel="noreferrer" aria-label="Spotify"><FaSpotify /></a>
+          <a href="https://soundcloud.com/elyonstudiosbcn" target="_blank" rel="noreferrer" aria-label="Soundcloud"><FaSoundcloud /></a>
         </div>
       </div>
 

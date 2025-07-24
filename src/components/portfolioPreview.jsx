@@ -1,21 +1,21 @@
 import { useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { portfolioData } from "../data/portfolioData";
+import { portfolioData, portfolioDataPreview } from "../data/portfolioData";
 import "./portfolioPreview.css";
 
 export default function PortfolioPreview() {
   const { t } = useTranslation();
 
-  const randomItems = useMemo(() => {
-    const allItems = [
-      ...Object.values(portfolioData.composicion).flat(),
-      ...Object.values(portfolioData.produccion).flat(),
-    ];
+  // const randomItems = useMemo(() => {
+  //   const allItems = [
+  //     ...Object.values(portfolioData.composicion).flat(),
+  //     ...Object.values(portfolioData.produccion).flat(),
+  //   ];
 
-    const shuffled = allItems.sort(() => 0.5 - Math.random());
-    return shuffled.slice(0, 4); // 4 elementos aleatorios
-  }, []);
+  //   const shuffled = allItems.sort(() => 0.5 - Math.random());
+  //   return shuffled.slice(0, 4); // 4 elementos aleatorios
+  // }, []);
 
   return (
     <section className="section container text-center">
@@ -23,7 +23,7 @@ export default function PortfolioPreview() {
             <h2 className="heading">{t("home.portfolioPreview.title")}</h2>
             <p className="mb-4">{t("home.portfolioPreview.description")}</p>
             <div className="portfolio-preview-grid">
-                {randomItems.map((item, idx) => (
+                {portfolioDataPreview.map((item, idx) => (
                 <a
                     key={idx}
                     href={item.link}

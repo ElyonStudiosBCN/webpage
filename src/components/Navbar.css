@@ -129,7 +129,7 @@
 
 .leftside {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
@@ -138,6 +138,7 @@
   gap: 1rem;
   font-size: 1.4rem;
   color: var(--color-primary);
+  align-items: center;
 }
 
 .rightside {
@@ -173,6 +174,11 @@
 
 /* --------------- DESKTOP MEDIA QUERY --------------- */
 @media (min-width: 768px) {
+  .leftside {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
   .navbar {
     flex-direction: row;
     align-items: center;
