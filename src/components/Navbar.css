@@ -127,6 +127,19 @@
   color: var(--color-primary);
 }
 
+.leftside {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+}
+
+.navbar-social {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
 .rightside {
     position: fixed;
     top: 75px;

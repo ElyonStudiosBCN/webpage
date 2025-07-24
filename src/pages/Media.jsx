@@ -4,6 +4,7 @@ import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import FadeInSection from "../components/fadeInSection";
 import { Helmet } from "react-helmet";
+import { InstagramEmbed } from 'react-social-media-embed';
 
 export default function Media() {
   const { t } = useTranslation();
@@ -30,7 +31,8 @@ export default function Media() {
                 <h2 className="subheading">{t("media.youtube")}</h2>
                 <div className="media-grid">
                   <iframe
-                    src="https://www.youtube.com/embed/YOUR_VIDEO_ID"
+                    className="embed" 
+                    src="https://www.youtube.com/embed/YgDaXEvUaXE"
                     title="YouTube video"
                     allowFullScreen
                   />
@@ -38,25 +40,30 @@ export default function Media() {
                     src="https://www.youtube.com/embed/YOUR_VIDEO_ID_2"
                     title="YouTube video 2"
                     allowFullScreen
+                    className="embed" 
                   />
                 </div>
               </div>
+
+              
 
               {/* Spotify Section */}
               <div className="media-block card">
                 <h2 className="subheading">{t("media.spotify")}</h2>
                 <div className="media-grid">
                   <iframe
-                    src="https://open.spotify.com/embed/track/7177gBM6G8lmeavvL9bAUy"
+                    src="https://open.spotify.com/embed/track/1glV19IO9Jv7D4tBhuR5Ps?utm_source=generator&theme=0"
                     title="Spotify player"
                     allow="encrypted-media"
                     loading="lazy"
+                    className="embed" 
                   />
                   <iframe
                     src="https://open.spotify.com/embed/album/1KuXm5M0haFilwcsAw2iXs"
                     title="Spotify album"
                     allow="encrypted-media"
                     loading="lazy"
+                    className="embed" 
                   />
                 </div>
               </div>
@@ -66,7 +73,7 @@ export default function Media() {
                 <h2 className="subheading">{t("media.soundcloud")}</h2>
                 <p>{t("media.soundcloudDescription")}</p>
                 {/* SoundCloud Embed */}
-                <iframe width="auto" height="150px"  frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2128918653&color=%238f743e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                <iframe className="embed" width="auto" height="150px"  frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2128918653&color=%238f743e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
                 </iframe>
                 <div
                   style={{
@@ -108,8 +115,8 @@ export default function Media() {
               <div className="media-block card">
                 <h2 className="subheading">{t("media.instagram")}</h2>
                 <p>{t("media.instagramDescription")}</p>
-                <div>
-                  /*instagram embedded posts*/
+                <div style={{ display: 'flex', justifyContent: 'center' }}>
+                  <InstagramEmbed url="https://www.instagram.com/p/DKHc56xosXF/" />
                 </div>
                 <a
                   href="https://www.instagram.com/elyonstudiosbcn"
