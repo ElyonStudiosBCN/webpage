@@ -107,3 +107,8 @@ article blockquote {
   border-radius: 0.5rem;
   font-style: italic;
 }
+
+hr {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
