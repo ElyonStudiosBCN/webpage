@@ -60,6 +60,24 @@ export default function Servicios() {
       <meta property="og:description" content="Grabación, composición, coaching vocal y más. Conoce todo lo que ofrecemos en Elyon Studios." />
       <meta property="og:image" content="/assets/SEO.png" />
       <meta property="og:url" content="https://www.elyonstudiosbcn.com/servicios" />
+      <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Elyon Studios",
+            "image": "https://elyonstudiosbcn.com/assets/SEO.png",
+            "@id": "https://elyonstudiosbcn.com",
+            "url": "https://elyonstudiosbcn.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Barcelona",
+              "addressCountry": "ES"
+            },
+            "sameAs": [
+              "https://www.instagram.com/elyonstudiosbcn",
+            ]
+          }
+        `}</script>
     </Helmet>
       <FadeInSection>
         <section className="section section-light">
@@ -97,7 +115,7 @@ export default function Servicios() {
                         </div>
                         <img
                           src={service.image}
-                          alt={service.title}
+                          alt={`Elyon Studios ${service.title} – Estudio de música y producción en Barcelona`}
                           className="service-image"
                         />
                       </div>

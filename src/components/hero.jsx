@@ -15,7 +15,7 @@ const Hero = () => {
       <div className="hero-content semiopaque card">
         <img src="/assets/logo-nobg-onlytext.png" alt="Hero" className="hero-logo-name" />
         {/* <h1 className="hero-title text-primary text-center">{t('home.hero.title')}</h1> */}
-        <h3 className="hero-subtitle text-primary text-center">{t('home.hero.subtitle')}</h3>
+        <h1 className="hero-subtitle text-primary text-center">{t('home.hero.subtitle')}</h1>
         <Link to="/portfolio" className="btn btn-primary mt-4">
           {t('home.hero.cta')}
         </Link>

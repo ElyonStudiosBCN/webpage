@@ -19,6 +19,24 @@ export default function SobreMi() {
         <meta property="og:description" content="Visión artística y trayectoria profesional de Pau Lefler." />
         <meta property="og:image" content="/assets/SEO.png" />
         <meta property="og:url" content="https://www.elyonstudiosbcn.com/sobremi" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Elyon Studios",
+            "image": "https://elyonstudiosbcn.com/assets/SEO.png",
+            "@id": "https://elyonstudiosbcn.com",
+            "url": "https://elyonstudiosbcn.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Barcelona",
+              "addressCountry": "ES"
+            },
+            "sameAs": [
+              "https://www.instagram.com/elyonstudiosbcn",
+            ]
+          }
+        `}</script>
       </Helmet>
       <FadeInSection>
         <section className="section section-light">
@@ -31,7 +49,7 @@ export default function SobreMi() {
                 <p className="text-muted text1">{t("about.description1.p3")}</p>
                 <p className="text-muted text1">{t("about.description1.p4")}</p>
               </div>
-              <img src={pau} alt="Pau Lefler" className="pau-image"/>
+              <img src={pau} alt="Pau Lefler – Fundador de estudio de música y producción en Barcelona" className="pau-image"/>
             </div>
             <div className="text2">
               <p className="text-muted">{t("about.description2")}</p>

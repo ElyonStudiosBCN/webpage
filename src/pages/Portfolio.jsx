@@ -18,6 +18,24 @@ export default function Portfolio() {
         <meta property="og:description" content="Explora nuestras producciones musicales y bandas sonoras originales." />
         <meta property="og:image" content="/assets/SEO.png" />
         <meta property="og:url" content="https://www.elyonstudiosbcn.com/portfolio" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Elyon Studios",
+            "image": "https://elyonstudiosbcn.com/assets/SEO.png",
+            "@id": "https://elyonstudiosbcn.com",
+            "url": "https://elyonstudiosbcn.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Barcelona",
+              "addressCountry": "ES"
+            },
+            "sameAs": [
+              "https://www.instagram.com/elyonstudiosbcn",
+            ]
+          }
+        `}</script>
       </Helmet>
       <div className="container section">
         <div className="card">
@@ -56,7 +74,7 @@ export default function Portfolio() {
                   {portfolioData.produccion.map((item, idx) => (
                     <a href={item.link} target="_blank" rel="noopener noreferrer" className="portfolio-item" key={idx}>
                       <span>{item.style}</span>
-                      <img src={item.img} alt={item.title} />
+                      <img src={item.img} alt={`Elyon Studios ${item.title} – Estudio de música y producción en Barcelona`} />
                       <span>{item.title}</span>
                     </a>
                   ))}

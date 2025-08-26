@@ -16,6 +16,24 @@ export default function Blog() {
         <meta property="og:image" content="/assets/SEO.png" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://elyonstudiosbcn.com/blog" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Elyon Studios",
+            "image": "https://elyonstudiosbcn.com/assets/SEO.png",
+            "@id": "https://elyonstudiosbcn.com",
+            "url": "https://elyonstudiosbcn.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Barcelona",
+              "addressCountry": "ES"
+            },
+            "sameAs": [
+              "https://www.instagram.com/elyonstudiosbcn",
+            ]
+          }
+        `}</script>
       </Helmet>
       <section className="section section-light container">
         <div className="card">

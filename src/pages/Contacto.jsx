@@ -17,6 +17,24 @@ export default function Contacto() {
         <meta property="og:description" content="Formulario de contacto, email, teléfono y ubicación." />
         <meta property="og:image" content="/assets/SEO.png" />
         <meta property="og:url" content="https://www.elyonstudiosbcn.com/contacto" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Elyon Studios",
+            "image": "https://elyonstudiosbcn.com/assets/SEO.png",
+            "@id": "https://elyonstudiosbcn.com",
+            "url": "https://elyonstudiosbcn.com",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Barcelona",
+              "addressCountry": "ES"
+            },
+            "sameAs": [
+              "https://www.instagram.com/elyonstudiosbcn",
+            ]
+          }
+        `}</script>
       </Helmet>
       <FadeInSection>
         <section className="section section-light">

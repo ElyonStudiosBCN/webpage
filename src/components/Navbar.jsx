@@ -45,7 +45,7 @@ export default function Navbar() {
       <div className="leftside">
         <div className="logo">
           <Link to="/" onClick={closeMenu}>
-            <img src={logo} alt="Elyon Studios Logo" className="logo-image" />
+            <img src={logo} alt="Logo Elyon Studios – Estudio de música y producción en Barcelona" className="logo-image" />
           </Link>
         </div>
         <div className="navbar-social">

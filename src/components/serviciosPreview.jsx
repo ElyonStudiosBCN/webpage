@@ -39,7 +39,7 @@ export default function ServiciosPreview() {
                     to={`/servicios?service=${service.id}`}
                     className="servicios-preview-item card"
                 >
-                    <img src={service.image} alt={service.title} />
+                    <img src={service.image} alt={`Elyon Studios ${service.name} – Estudio de música y producción en Barcelona`} />
                     <span>{service.title}</span>
                 </Link>
                 ))}
