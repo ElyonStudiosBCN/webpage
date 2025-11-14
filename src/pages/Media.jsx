@@ -91,8 +91,40 @@ export default function Media() {
                 <h2 className="subheading">{t("media.soundcloud")}</h2>
                 <p>{t("media.soundcloudDescription")}</p>
                 {/* SoundCloud Embed */}
-                <div>
-                  <iframe className="embed" width="auto" height="150px"  frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2128918653&color=%238f743e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" 
+                  src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/soundcloud%253Aplaylists%253A2096249495&color=%23412212&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
+                </iframe>
+                <div 
+                  style={{
+                    fontSize: "10px", 
+                    color: "#cccccc",
+                    lineBreak: "anywhere",
+                    wordBreak: "normal",
+                    overflow: "hidden",
+                    whiteSpace: "nowrap",
+                    textOverflow: "ellipsis",
+                    fontFamily: "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif",
+                    fontWeight: "100"
+                  }}>
+                    <a 
+                      href="https://soundcloud.com/elyonstudiosbcn" 
+                      title="ELYON STUDIOS BCN" 
+                      target="_blank" 
+                      style={{color: "#cccccc", textDecoration: "none"}}>
+                        ELYON STUDIOS BCN
+                    </a>
+                    {" "} ·  {" "}
+                    <a 
+                      href="https://soundcloud.com/elyonstudiosbcn/sets/elyon-studios-productions" 
+                      title="ELYON STUDIOS PRODUCTIONS" 
+                      target="_blank" 
+                      style={{color: "#cccccc", textDecoration: "none"}}>
+                        ELYON STUDIOS PRODUCTIONS
+                    </a>
+                  </div>
+                {/* <div>
+                  <iframe className="embed" width="auto" height="150px"  frameborder="no" allow="autoplay" 
+                    src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2128918653&color=%238f743e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true">
                   </iframe>
                   <div
                     style={{
@@ -166,7 +198,7 @@ export default function Media() {
                       </a>
                     </div>
                   </div>
-                </div>
+                </div> */}
               </div>
 
               {/* Instagram Section */}
